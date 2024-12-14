@@ -116,7 +116,7 @@ For all the models (except linear regression and neural network), the optimal hy
   </table>
 
 ## Linear SVR (Support Vector Regression)
-* The standard SVR model tries to find a function that best predicts the continuous output value for a given input value, and can use both linear and non-linear kernels.
+* In general, the SVR model tries to find a function that best predicts the continuous output value for given input value(s), and can use both linear and non-linear kernels.
 * Linear SVR provides better results than the standard SVR model for large datasets, but only uses the linear kernel.
 <table>
   <thead>
@@ -151,6 +151,127 @@ For all the models (except linear regression and neural network), the optimal hy
     <tr>
       <td align="center"><strong>Test Subset</strong></td>
       <td align="center">20.264708</td>
+      <td align="center">0.996606</td>
+    </tr>
+  </tbody>
+  </table>
+
+## Decision Tree Regressor
+* It observes the features of an object and trains a model in the structure of a tree to make predictions for data in the future.
+<table>
+  <thead>
+    <tr>
+      <th align="center"></th>
+      <th align="center"></th>
+      <th align="center">MSE</th>
+      <th align="center">R2 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2"><strong>Speed Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">131.68398</td>
+      <td align="center">0.999962</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">825.982098</td>
+      <td align="center">0.999761</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="6"></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2"><strong>Torque Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">0.142327</td>
+      <td align="center">0.999976</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">0.867584</td>
+      <td align="center">0.999855</td>
+    </tr>
+  </tbody>
+  </table>
+
+## Bayesian Ridge Regression
+* It is a modified version of the ridge regression model, and employs prior belief or knowledge about the data to create more accurate predictions.
+* It is extremely useful in cases where the data is complex or ambiguous.
+<table>
+  <thead>
+    <tr>
+      <th align="center"></th>
+      <th align="center"></th>
+      <th align="center">MSE</th>
+      <th align="center">R2 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2"><strong>Speed Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">218977.652202</td>
+      <td align="center">0.936707</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">219977.003862</td>
+      <td align="center">0.936288</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="6"></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2"><strong>Torque Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">20.365407</td>
+      <td align="center">0.996574</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">20.259357</td>
+      <td align="center">0.996606</td>
+    </tr>
+  </tbody>
+  </table>
+
+## Stochastic Gradient Descent (SGD) Regressor
+* It changes the model's parameters using a single randomly selected data point (or a small batch of data) at each iteration.
+<table>
+  <thead>
+    <tr>
+      <th align="center"></th>
+      <th align="center"></th>
+      <th align="center">MSE</th>
+      <th align="center">R2 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2"><strong>Speed Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">219356.695489</td>
+      <td align="center">0.936598</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">220232.669834</td>
+      <td align="center">0.936214</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="6"></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2"><strong>Torque Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">20.36786</td>
+      <td align="center">0.996574</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">20.26058</td>
       <td align="center">0.996606</td>
     </tr>
   </tbody>
