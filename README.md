@@ -276,3 +276,85 @@ For all the models (except linear regression and neural network), the optimal hy
     </tr>
   </tbody>
   </table>
+
+## Neural Network
+* A neural network consist of interconnected nodes or neurons, which process and learn patterns from the data by automatically extracting significant or important features from the latter.
+* A neural network with 4 hidden layers was created for the given task, and it used ReLU and linear activation functions for the hidden and output layer(s) respectively.
+* The above network was trained for 100 epochs with a batch size of 512, and to validate its performance, the training subset was further split into 2 new subsets (80% for training and 20% for validation).
+<table>
+  <thead>
+    <tr>
+      <th align="center"></th>
+      <th align="center"></th>
+      <th align="center">MSE</th>
+      <th align="center">R2 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2"><strong>Speed Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">725.778194</td>
+      <td align="center">0.99979</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">808.079829</td>
+      <td align="center">0.999766</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="6"></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2"><strong>Torque Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">1.195187</td>
+      <td align="center">0.999799</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">1.165287</td>
+      <td align="center">0.999805</td>
+    </tr>
+  </tbody>
+  </table>
+
+## Gradient Boosting Regressor
+* It combines several weak learners into strong learners, in which each new model is trained to minimize the loss function such as mean squared error (regression) or cross-entropy (classification) of the previous model.
+<table>
+  <thead>
+    <tr>
+      <th align="center"></th>
+      <th align="center"></th>
+      <th align="center">MSE</th>
+      <th align="center">R2 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" rowspan="2"><strong>Speed Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">435.520003</td>
+      <td align="center">0.999874</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">612.659493</td>
+      <td align="center">0.999823</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="6"></td>
+    </tr>
+    <tr>
+      <td align="center" rowspan="2"><strong>Torque Prediction</strong></td>
+      <td align="center"><strong>Training Subset</strong></td>
+      <td align="center">0.479665</td>
+      <td align="center">0.999919</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Test Subset</strong></td>
+      <td align="center">0.555813</td>
+      <td align="center">0.999907</td>
+    </tr>
+  </tbody>
+  </table>
